@@ -1,0 +1,3 @@
+Q1: The file was lost, because it only existed in the container's own writable layer, and that layer is deleted together with the container.
+Q2: Only the proxy needs to be reachable from my laptop. The proxy talks to web over the private Compose network using the service name, so publishing the web port would expose it for no reason.
+Q3: An image is a read-only template built from a Dockerfile, while a container is a running (or stopped) instance created from that image with its own writable layer.
